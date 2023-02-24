@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+form button[type="submit"] {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#campaigns table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#campaigns th, #campaigns td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+#campaigns th {
+  background-color: #f2f2f2;
+}
+
+#campaigns td:last-child {
+  white-space: nowrap;
+}
+
+#campaigns td button {
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
