@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ALL HANDS PROJECT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>ALL HANDS CROWDFUND</h1>
+
+    <div id="create-campaign">
+      <h2>Create a Campaign</h2>
+      <form>
+        <label for="goal">Goal (in wei)</label>
+        <input type="text" id="goal" name="goal" required>
+        <label for="deadline">Deadline (Unix timestamp)</label>
+        <input type="text" id="deadline" name="deadline" required>
+        <label for="beneficiary">Beneficiary</label>
+        <input type="text" id="beneficiary" name="beneficiary" required>
+        <button type="submit">Create Campaign</button>
+      </form>
+    </div>
+
+    <div id="campaigns">
+      <h2>Active Campaigns</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Goal</th>
+            <th>Raised</th>
+            <th>Deadline</th>
+            <th>Beneficiary</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="campaigns-list">
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./web3.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
